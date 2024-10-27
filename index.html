@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Jura', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            background-color: black; 
+        }
+
+        
+        .homepage {
+            background-image: url('bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text-container {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(40px); 
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .moon-container {
+            position: fixed;
+            top: 2%;
+            right: 5%;
+            width: 18rem;
+            height: 18rem;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        
+        .about-section {
+            background-color: #000; 
+            color: #fff;
+            padding: 4rem 1rem;
+            opacity: 0;
+            transform: translateY(50px); 
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .experience-section {
+            background-color: #000; 
+            color: #fff;
+            padding: 4rem 1rem;
+            opacity: 0;
+            transform: translateY(50px); 
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .education-section {
+            background-color: #000;
+            color: #fff;
+            padding: 4rem 1rem;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .thank-you-section {
+            background-image: url('footer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .font-jura {
+            font-family: 'Jura', sans-serif;
+        }
+
+        
+        .icon-container:hover img {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Homepage -->
+    <div class="homepage">
+        <div class="text-container" id="text">
+            <h1 class="text-white text-4xl md:text-8xl">PERSONAL <br> PORTFOLIO</h1>
+        </div>
+
+        <div class="moon-container" id="moon">
+            <img src="moon-Photoroom.png" alt="A decorative moon graphic" class="w-full h-full object-cover rounded">
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="flex flex-col items-center px-8 md:px-16 py-16">
+            <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-semibold mb-8">About me</h1>
+                    <p class="text-xl leading-relaxed mb-4">
+                        Hello young designers! No idea why you are here? Everything is a first experience that adds to your favorite things to do.
+                         So is the concept of being a UI/UX designer. You try to experience small design concepts, and who knows, you might be a 
+                         professional at it one day. With that, I have designed a brief Personal Profile about myself. Are you ready? My name is Jigden Shakya.
+                          I am currently a first-year college student pursuing a degree in Bachelor of Engineering in Software Engineering.
+                           This portfolio showcases my resume, education, accomplishments, and work as a UI/UX designer.
+                    </p><br>
+                    <p class="text-xl font-semibold mt-8">More about me ↓</p>
+                </div>
+                
+                <!-- Follow Links -->
+                <div class="flex flex-col items-center space-y-8 mt-12 md:mt-24 ml-6">
+                    <div class="w-80 h-96 bg-white rounded-lg"><img src="profile.jpg" alt="profile" class="w-full h-full object-cover rounded-lg"></div>
+                    
+                    <div class="text-center">
+                        <p class="text-xl font-semibold mb-4">Contact me through</p>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/" class="w-12 h-12 bg-white rounded-lg flex items-center justify-center hover:bg-gray-200 transition icon-container" aria-label="Facebook">
+                                <img src="f1-removebg-preview.png" alt="Facebook" class="w-6 h-6 transition" />
+                            </a>
+                            <a href="https://www.instagram.com/" class="w-12 h-12 bg-white rounded-lg flex items-center justify-center hover:bg-gray-200 transition icon-container" aria-label="Twitter">
+                                <img src="f2-removebg-preview.png" alt="Instagram" class="w-6 h-6 transition" />
+                            </a>
+                            <a href="https://x.com/?lang=en" class="w-12 h-12 bg-white rounded-lg flex items-center justify-center hover:bg-gray-200 transition icon-container" aria-label="Instagram">
+                                <img src="f3-removebg-preview.png" alt="Twitter" class="w-6 h-6 transition" />
+                            </a>
+                            <a href="https://www.youtube.com/" class="w-12 h-12 bg-white rounded-lg flex items-center justify-center hover:bg-gray-200 transition icon-container" aria-label="GitHub">
+                                <img src="f4-removebg-preview.png" alt="Youtube" class="w-6 h-6 transition" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+        <div class="max-w-4xl mx-auto">
+            
+            <h1 class="text-4xl md:text-5xl font-semibold mb-8">Experience</h1><br><br>
+            <p class="text-xl leading-relaxed mb-4">
+                I have had a lot of projects as a UI/UX designer. Some of these included replicating particular 
+                website features. Throughout the period of doing projects I could grasp a lot of values that you 
+                should possess as a designer. It includes the value of working as a team, addressing user needs 
+                through appealing and aesthetic websites. I could also indulge with other people and suggest to 
+                modify their designs. This way I could really develop my skills as a front-end engineer. Some of 
+                projects include replicating News websites and designing the popular websites contributed by 
+                global developers. I also had experience of web development using HTML/CSS.
+            </p> <br>
+
+            <!-- Card links -->
+            <div class="flex justify-center gap-16"> 
+                <!-- Card 1 -->
+                <div class="relative bg-white rounded-lg shadow-lg w-64 h-64 flex flex-col overflow-hidden border-2 border-white">
+                    <!-- Label -->
+                    <div class="absolute top-0 left-2 bg-black text-white text-xs font-semibold px-3 py-1 rounded-bl-lg rounded-br-lg">
+                        News website design
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="flex flex-col items-center justify-center flex-grow p-6">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">BHUTAN</h2>
+                        <p class="text-gray-500 italic">Believe</p>
+                    </div>
+                    
+                    <!-- link -->
+                    <div class="bg-black text-left py-3 pl-3 border-t border-white hover:bg-gray-300">
+                        <a href="https://www.figma.com/design/xmPUbM1779mRA9AWAum88C/group-3-PA?node-id=0-1&t=C9boVL3vcCFoPSCl-1" class="text-sm text-white hover:text-black">Click here to explore the project and avail my templates</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative bg-white rounded-lg shadow-lg w-64 h-64 flex flex-col overflow-hidden border-2 border-white">
+                    <!-- Label -->
+                    <div class="absolute top-0 left-2 bg-black text-white text-xs font-semibold px-3 py-1 rounded-bl-lg rounded-br-lg">
+                        Designing Adobe
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="flex flex-col items-center justify-center flex-grow p-6">
+                        <img src="adobe-removebg-preview.png" alt="Adobe" class="h-20 w-auto mb-2">
+                    </div>
+                    
+                    <!-- link -->
+                    <div class="bg-black text-left py-3 pl-3 border-t border-white hover:bg-gray-300">
+                        <a href="https://www.figma.com/design/TyN6L1ku2QmYOTk7RRZEHj/PA2-ADOBE?t=C9boVL3vcCFoPSCl-1" class="text-sm text-white hover:text-black">Click here to explore the project and avail my templates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="max-w-4xl mx-auto px-4 py-16">
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- Title -->
+                <h1 class="text-4xl md:text-5xl font-semibold mb-8">Education</h1><br><br>
+                
+                <!-- Description -->
+                <p class="text-xl leading-relaxed mb-4">
+                  I am currently in my first year pursuing a Bachelor of Engineering in Software Engineering in CST, where I am building the foundation of my career in technology. Before university,
+                   I attended Samtse Higher Secondary School, where I developed a strong interest in engineering and software development. 
+                  One of the key highlights of my journey so far has been participating in the national innovation competition, FAB 23, 
+                  which allowed me to explore creative problem-solving and innovation. These experiences have fueled my passion for software engineering, 
+                  and I’m excited to continue growing in this field.
+                </p>
+            </div><br><br>
+            
+            <!-- Image Grids -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-16 justify-items-center">
+                <div class="bg-white rounded-lg shadow-lg w-72 h-48 flex items-center justify-center">
+                    <img src="i1.jpg" alt="Image 1" class="rounded-lg object-cover w-full h-full">
+                </div>
+                <div class="bg-white rounded-lg shadow-lg w-72 h-48 flex items-center justify-center">
+                    <img src="i2.jpg" alt="Image 2" class="rounded-lg object-cover w-full h-full">
+                </div>
+                <div class="bg-white rounded-lg shadow-lg w-72 h-48 flex items-center justify-center">
+                    <img src="i3.jpg" alt="Image 3" class="rounded-lg object-cover w-full h-full">
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Footer Section -->
+    <section class="thank-you-section" id="thank-you">
+      <div class="text-center">
+        <h1 class="text-white text-4xl md:text-8xl">Thank you</h1>
+        <div class="text-sm"><br><br><br>
+          <p>© Copyright Jigden Shakya 2024, SWE College of Science and Technology.</p>
+          <p>Contact us</p>
+          <p># 77***** / 17*****</p>
+        </div>
+      </div>
+    </section>
+  
+
+    
+
+ <!-- JavaScript for scroll effects -->
+ <script>
+    window.addEventListener('scroll', () => {
+        const text = document.getElementById('text');
+        const moon = document.getElementById('moon');
+        const aboutSection = document.getElementById('about');
+        const experienceSection = document.getElementById('experience');
+        const educationSection = document.getElementById('education');
+        const thankYouSection = document.getElementById('thank-you');
+        const scrollPosition = window.scrollY;
+
+        // Homepage animation
+        if (scrollPosition > 5) {
+            text.style.opacity = '1';
+            text.style.transform = 'translateY(0)';
+            moon.style.opacity = '1';
+        } else {
+            text.style.opacity = '0';
+            text.style.transform = 'translateY(20px)';
+            moon.style.opacity = '0';
+        }
+
+        // About Section parallax effect
+        if (scrollPosition > window.innerHeight / 2) {
+            aboutSection.style.opacity = '1';
+            aboutSection.style.transform = 'translateY(0)';
+        } else {
+            aboutSection.style.opacity = '0';
+            aboutSection.style.transform = 'translateY(50px)';
+        }
+
+        // Experience Section parallax effect
+        if (scrollPosition > (window.innerHeight + window.innerHeight / 2)) {
+            experienceSection.style.opacity = '1';
+            experienceSection.style.transform = 'translateY(0)';
+        } else {
+            experienceSection.style.opacity = '0';
+            experienceSection.style.transform = 'translateY(50px)';
+        }
+
+        // Education Section parallax effect
+        if (scrollPosition > (window.innerHeight * 2 + window.innerHeight / 2)) {
+            educationSection.style.opacity = '1';
+            educationSection.style.transform = 'translateY(0)';
+        } else {
+            educationSection.style.opacity = '0';
+            educationSection.style.transform = 'translateY(50px)';
+        }
+        // Footer Section animation
+        if (scrollPosition > (window.innerHeight * 3 + window.innerHeight / 2)) {
+        thankYouSection.style.opacity = '1';
+        thankYouSection.style.transform = 'translateY(0)';
+        } else {
+        thankYouSection.style.opacity = '0';
+        thankYouSection.style.transform = 'translateY(50px)';
+      }
+    });
+</script>
+</body>
+</html>
