@@ -95,6 +95,182 @@
         .icon-container:hover img {
             opacity: 0.5;
         }
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .homepage {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .text-container h1 {
+        font-size: 2rem; /* Smaller font for mobile */
+    }
+
+    .moon-container {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .about-section,
+    .experience-section,
+    .education-section {
+        padding: 2rem 1rem;
+    }
+
+    .about-section h1,
+    .experience-section h1,
+    .education-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .icon-container {
+        width: 32px;
+        height: 32px;
+    }
+
+    .thank-you-section {
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .thank-you-section h1 {
+        font-size: 3rem;
+    }
+
+    /* Adjust layout to stack vertically */
+    .main-content {
+        display: block;
+    }
+
+    .sidebar,
+    .article {
+        width: 100%;
+    }
+}
+
+/* Tablet (481px - 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .homepage {
+        height: 90vh;
+    }
+
+    .text-container h1 {
+        font-size: 3rem; /* Medium font for tablet */
+    }
+
+    .moon-container {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .about-section,
+    .experience-section,
+    .education-section {
+        padding: 3rem 2rem;
+    }
+
+    .about-section h1,
+    .experience-section h1,
+    .education-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-section p {
+        font-size: 1.2rem;
+    }
+
+    .icon-container {
+        width: 36px;
+        height: 36px;
+    }
+
+    .thank-you-section {
+        height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .thank-you-section h1 {
+        font-size: 4rem;
+    }
+
+    /* Adjust layout for medium screens */
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .article {
+        width: 100%;
+    }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    .homepage {
+        height: 100vh;
+    }
+
+    .text-container h1 {
+        font-size: 4rem; /* Larger font for desktops */
+    }
+
+    .moon-container {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .about-section,
+    .experience-section,
+    .education-section {
+        padding: 5rem 2rem;
+    }
+
+    .about-section h1,
+    .experience-section h1,
+    .education-section h1 {
+        font-size: 3rem;
+    }
+
+    .about-section p {
+        font-size: 1.4rem;
+    }
+
+    .icon-container {
+        width: 48px;
+        height: 48px;
+    }
+
+    .thank-you-section {
+        height: 100vh;
+        padding: 6rem 2rem;
+    }
+
+    .thank-you-section h1 {
+        font-size: 6rem;
+    }
+
+    /* Flexbox layout for large screens */
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidebar {
+        width: 30%;
+    }
+
+    .article {
+        width: 65%;
+    }
+}
+
     </style>
 </head>
 <body>
